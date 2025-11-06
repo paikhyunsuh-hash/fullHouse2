@@ -356,7 +356,7 @@ body {
   border: 2px solid #f1927b;
   border-radius: 20px;
   font-weight: bold;
-  /* 귀여운 효과용 */
+
   /* transition: all 0.2s ease;  */
   box-shadow: 0 5px 0 #f1927b; /* 살짝 입체 느낌 */
 }
