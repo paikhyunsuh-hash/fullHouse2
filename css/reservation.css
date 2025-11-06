@@ -582,7 +582,7 @@ footer {
     display: flex;
   }
   #con04 .title h2 {
-    font-size: 28px; /* 제목 줄바꿈 시 높이 과도 증가 방지 */
+    font-size: 28px;
     letter-spacing: 1px;
     margin-bottom: 10px;
   }
@@ -624,7 +624,7 @@ footer {
   }
 
   #con01 .wrap {
-    flex-direction: column; /* ✅ 세로로 쌓기 */
+    flex-direction: column;
     align-items: center;
     gap: 40px;
   }
