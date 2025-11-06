@@ -1,0 +1,448 @@
+/*영문폰트*/
+/*  font-family: "BlackerSans"; */
+@font-face {
+  font-family: "BlackerSans";
+  src: url("../fonts/BlackerSansDisplayTrial-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BlackerSans";
+  src: url("../fonts/BlackerSansDisplayTrial-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BlackerSans";
+  src: url("../fonts/BlackerSansDisplayTrial-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BlackerSans";
+  src: url("../fonts/BlackerSansDisplayTrial-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BlackerSans";
+  src: url("../fonts/BlackerSansDisplayTrial-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlackerSans";
+  src: url("../fonts/BlackerSansDisplayTrial-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*한글폰트*/
+/* font-family: "AritaBuriKR"; */
+@font-face {
+  font-family: "AritaBuriKR";
+  src: url("../fonts/AritaBuriKR-HairLine.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AritaBuriKR";
+  src: url("../fonts/AritaBuriKR-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AritaBuriKR";
+  src: url("../fonts/AritaBuriKR-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AritaBuriKR";
+  src: url("../fonts/AritaBuriKR-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AritaBuriKR";
+  src: url("../fonts/AritaBuriKR-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* * */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/*BODY*/
+body {
+  background-color: #ffefef;
+  word-break: keep-all;
+}
+
+.cursor img {
+  width: 100%;
+}
+
+.cursor1 {
+  /* width: 50px;
+  height: 50px; */
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(0%, 10%);
+  z-index: 999;
+  opacity: 0.8;
+}
+
+.cursor2 {
+  /* width: 50px;
+  height: 50px; */
+  position: fixed;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.8;
+}
+.cursor2 .click-image {
+  display: none;
+}
+
+/* 폰트 */
+h2 {
+  font-family: "BlackerSans", "AritaBuriKR";
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: "BlackerSans", "AritaBuriKR";
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h4 {
+  font-family: "BlackerSans", "AritaBuriKR";
+  font-size: 24px;
+  font-weight: bold;
+}
+p {
+  font-family: "AritaBuriKR", "BlackerSans";
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.num {
+  font-family: "AritaBuriKR", "BlackerSans";
+}
+.ko {
+  font-family: "AritaBuriKR", "BlackerSans";
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  margin: 0px auto;
+  background-color: transparent;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 9;
+  transition: background-color 1s ease, color 1s ease;
+}
+header.scrolled {
+  background-color: rgba(241, 146, 123, 0.8);
+}
+
+header .inner {
+  max-width: 1200px;
+  padding: 0px 20px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "BlackerSans";
+  font-weight: normal;
+  padding: 10px 0px;
+  height: 80px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+header h1 {
+  width: 100px;
+  height: 50px;
+}
+header h1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: invert();
+}
+header nav .burger {
+  display: none;
+  cursor: pointer;
+}
+header nav ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+header nav ul li a {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+header nav .burger {
+  display: none;
+}
+
+/* SIDE MENU */
+#menu {
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  text-align: right;
+  height: calc(100vh - 80px);
+  position: fixed;
+  top: 80px;
+  right: 0%;
+  top: 80px;
+  z-index: 10;
+  transition: background-color 1s ease, color 1s ease;
+  font-family: "BlackerSans";
+  display: none;
+}
+#menu.active {
+  display: block;
+}
+#menu.scrolled {
+  background-color: rgba(241, 146, 123, 0.8);
+}
+#menu ul {
+  padding: 10px 20px;
+}
+#menu ul li {
+  margin-bottom: 50px;
+}
+#container {
+  transition: 0.5s;
+}
+#container.active {
+  opacity: 0.8;
+  filter: blur(5px);
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: rgba(133, 191, 193, 0.8);
+  color: #fff;
+  box-sizing: border-box;
+  padding: 50px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  overflow-x: hidden;
+  font-family: "AritaBuriKR";
+  font-size: 16px;
+  font-weight: normal;
+}
+footer .inner {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .inner .info {
+  line-height: 1.5;
+}
+footer .inner .sns {
+  display: flex;
+  font-size: 24px;
+  gap: 20px;
+}
+footer .bottom {
+  max-width: 1200px;
+  margin: 0px auto;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* visual */
+#visual {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+#visual .panel li {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: none;
+}
+
+#visual .textBox {
+  width: 100%;
+  margin: 25% auto;
+  color: #fff;
+  text-align: center;
+}
+
+#visual h2 {
+  letter-spacing: 20px;
+  margin-bottom: 50px;
+  font-size: 5vw;
+}
+#visual P {
+  line-height: 1.6;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+/* VISUAL navi */
+
+#visual .navi {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  font-family: "BlackerSans";
+}
+#visual .navi li:nth-child(2) {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#visual .navi li:nth-child(2) span {
+  margin: 0px 10px;
+  display: none;
+}
+#visual .bar {
+  width: 500px;
+  height: 1px;
+  background-color: #ccc;
+  display: block;
+}
+#visual .bar > div {
+  width: 33.33%;
+  height: 100%;
+  background-color: #32f8ff;
+}
+#visual .navi li a {
+  padding: 10px;
+  /* z-index: 10; */
+}
+
+#visual .navi li:first-child {
+  color: rgb(255, 255, 255);
+}
+
+#visual .navi li:last-child {
+  color: rgb(255, 255, 255);
+}
+
+/* 모바일 */
+@media (max-width: 620px) {
+  /* HEADER */
+  header nav .burger {
+    display: block;
+  }
+  header nav .burger i {
+    font-size: 24px;
+  }
+  header nav .burger .open {
+    display: block;
+  }
+  header nav .burger .close {
+    display: none;
+  }
+  header nav ul {
+    display: none;
+  }
+
+  /* FOOTER */
+  footer .inner {
+    display: block;
+  }
+  footer .inner ul {
+    text-align: center;
+    margin: 0px auto;
+  }
+  footer .inner .info {
+    margin-bottom: 16px;
+  }
+  footer .inner .sns {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 620px) {
+  #visual {
+    height: 90vh; /* 모바일 주소창 감안하여 높이 살짝 줄임 */
+  }
+  #visual .titleBox {
+    width: 90%; /* 좌우 여백 확보 */
+    text-align: center;
+  }
+  #visual .titleBox h2 {
+    font-size: 13vw; /* 모바일에서 더 잘 보이도록 vw 값 증가 */
+    letter-spacing: 0.5vw;
+  }
+  #visual .titleBox p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  #visual .navi {
+    flex-direction: column; /* Prev/Next 버튼 세로 배치 */
+  }
+  #visual .navi .bar {
+    display: none; /* 바 숨김 */
+  }
+  #visual .bottom p {
+    margin: 10px 0; /* 상하 여백 */
+  }
+  #menu {
+    display: none;
+  }
+}
+
+/* 태블릿 */
+@media (min-width: 620px) and (max-width: 1200px) {
+}
+/* PC */
+@media (min-width: 1200px) {
+}
