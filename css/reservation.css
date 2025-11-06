@@ -561,13 +561,7 @@ footer {
   }
 
   #con01 .bar {
-    width: 500px;
-    height: 500px;
-    border-radius: 200px 0px 0px 0px;
-    right: auto;
-    left: 40%;
-    transform: translateX(-50%);
-    bottom: 50px;
+    display: none;
   }
 
   #con04 {
