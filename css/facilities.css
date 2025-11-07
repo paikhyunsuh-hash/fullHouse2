@@ -352,7 +352,7 @@ footer {
 @media (max-width: 620px) {
   /* #visual */
   #visual {
-    height: 90vh; /* 모바일 주소창 감안하여 높이 살짝 줄임 */
+    height: 100vh; /* 모바일 주소창 감안하여 높이 살짝 줄임 */
   }
   #visual .titleBox {
     width: 90%; /* 좌우 여백 확보 */
