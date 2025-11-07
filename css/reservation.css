@@ -566,13 +566,12 @@ footer {
 
   #con04 {
     overflow: hidden;
-    box-sizing: border-box;
-    padding: 0px;
   }
   #con04 .wrap {
     padding: 0 16px;
     /* margin-bottom: 32px; */
     gap: 28px;
+    box-sizing: border-box;
   }
   #con04 .section-block {
     /* gap: 16px; */
@@ -743,12 +742,14 @@ footer {
   /* con04 */
   #con04 {
     height: 100vh;
-    padding: 0px;
+    padding: 50px 0px;
+    box-sizing: border-box;
   }
 
   #con04 .all {
     padding: 0 15px;
     height: 100%;
+    box-sizing: border-box;
   }
 
   #con04 .wrap {
